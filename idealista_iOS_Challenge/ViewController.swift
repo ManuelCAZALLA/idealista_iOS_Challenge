@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+       let networkManager = BaseNetwork()
+        
+        networkManager.fetchAdList { result in
+            switch result {
+            case .success(let ads):
+                print("Anuncios recibidos: \(ads)")
+                DispatchQueue.main.async {
+                    //actualizar vista
+                   
+                }
+            case .failure(let error):
+                print("Error al obtener los anuncios: \(error)")
+            }
+        }
     }
-
-
 }
-

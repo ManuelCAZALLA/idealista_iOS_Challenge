@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Property: Codable {
+public struct ListModel: Codable {
     let propertyCode: String
     let thumbnail: String
     let floor: String
