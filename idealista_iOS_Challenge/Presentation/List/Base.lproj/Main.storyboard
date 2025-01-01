@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idealista_iOS_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqU-Y6-xdz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xP0-uY-xfb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" id="cGD-00-kGc">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cGD-00-kGc" id="Jhe-LW-OZh">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-Qw-PDj">
+                                <rect key="frame" x="16" y="767.66666666666663" width="361" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit" cornerStyle="dynamic" titleAlignment="center"/>
+                            </button>
+                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZZ-ef-34q">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7xQ-9g-y8f">
+                                        <rect key="frame" x="186.66666666666666" y="386.66666666666669" width="20" height="20"/>
+                                        <color key="color" systemColor="linkColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7xQ-9g-y8f" firstAttribute="centerX" secondItem="KZZ-ef-34q" secondAttribute="centerX" id="uBI-XB-LER"/>
+                                    <constraint firstItem="7xQ-9g-y8f" firstAttribute="centerY" secondItem="KZZ-ef-34q" secondAttribute="centerY" id="xNO-Rs-olw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UnA-6D-S6Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZZ-ef-34q" firstAttribute="leading" secondItem="UnA-6D-S6Q" secondAttribute="leading" id="7sU-g6-mGU"/>
+                            <constraint firstItem="xP0-uY-xfb" firstAttribute="trailing" secondItem="UnA-6D-S6Q" secondAttribute="trailing" id="8Sv-LN-Fcq"/>
+                            <constraint firstItem="KZZ-ef-34q" firstAttribute="top" secondItem="UnA-6D-S6Q" secondAttribute="top" id="D6i-e8-cGR"/>
+                            <constraint firstItem="xP0-uY-xfb" firstAttribute="leading" secondItem="UnA-6D-S6Q" secondAttribute="leading" id="GHy-HS-A5t"/>
+                            <constraint firstItem="UnA-6D-S6Q" firstAttribute="bottom" secondItem="NLq-Qw-PDj" secondAttribute="bottom" constant="16" id="K9u-Dz-edI"/>
+                            <constraint firstAttribute="bottom" secondItem="xP0-uY-xfb" secondAttribute="bottom" id="KN8-bP-jW4"/>
+                            <constraint firstItem="NLq-Qw-PDj" firstAttribute="leading" secondItem="UnA-6D-S6Q" secondAttribute="leading" constant="16" id="XG5-pk-tWC"/>
+                            <constraint firstItem="KZZ-ef-34q" firstAttribute="trailing" secondItem="UnA-6D-S6Q" secondAttribute="trailing" id="ZSy-uF-Apq"/>
+                            <constraint firstAttribute="bottom" secondItem="KZZ-ef-34q" secondAttribute="bottom" id="chR-Ak-cKT"/>
+                            <constraint firstItem="xP0-uY-xfb" firstAttribute="top" secondItem="MqU-Y6-xdz" secondAttribute="top" id="ekK-XY-FZn"/>
+                            <constraint firstItem="UnA-6D-S6Q" firstAttribute="trailing" secondItem="NLq-Qw-PDj" secondAttribute="trailing" constant="16" id="yZo-2c-goH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TableView" destination="xP0-uY-xfb" id="Teh-sw-inX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
