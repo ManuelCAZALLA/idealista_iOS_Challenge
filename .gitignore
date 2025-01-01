@@ -1,0 +1,30 @@
+# Archivos específicos de Xcode
+*.xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Carpetas de construcción y derivados
+build/
+DerivedData/
+
+# Archivos de logs y estado del editor
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+# Archivos específicos del sistema operativo
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos temporales de editores
+*.swp
+*.swo
+._* 
+~*
+
+# Archivos generados por el sistema
+Thumbs.db
+ehthumbs.db
+
